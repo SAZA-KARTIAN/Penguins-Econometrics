@@ -10,7 +10,7 @@ El análisis se realizó en RStudio, utilizando técnicas de regresión lineal m
 
 ## 🎯 Motivación
 
-Este proyecto surge de mi interés en el análisis de datos y mi participación en el Diplomado de Data Science de la Universidad Católica de Chile, donde profundicé en modelado predictivo y técnicas estadísticas aplicadas.
+Compartir este proyecto surge de mi interés en el análisis de datos y mi participación en el Diplomado de Data Science de la Universidad Católica de Chile, donde profundicé en modelado predictivo y técnicas estadísticas aplicadas.
 
 ## 📂 Estructura del Proyecto
 
@@ -36,9 +36,8 @@ Paquetes: ggplot2, dplyr, car, lmtest
 
 ## 🚀 Cómo ejecutar
 
-1️⃣ Clonar este repositorio:
-
-git clone [ENLACE DEL REPO]
+1️⃣ Clonar este repositorio: git clone [[Pingüinos-Econometría
+]](https://github.com/SAZA-KARTIAN/Penguins-Econometrics.git)
 
 2️⃣ Abrir RStudio y ejecutar el script en scripts/
 
