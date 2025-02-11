@@ -1,0 +1,69 @@
+---
+title: "Análisis de Características Biológicas y Geográficas de los Pingüinos Adelie"
+author: "Sebastián Zúñiga"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+# Introducción
+
+Este análisis fue desarrollado en el curso de **Econometría** en la **Universidad Técnica Federico Santa María**, con el objetivo de estudiar la relación entre las características biológicas y geográficas de los pingüinos Adelie. 
+
+# Carga de librerías
+```{r setup, message=FALSE, warning=FALSE}
+library(ggplot2)
+library(dplyr)
+library(car)
+library(lmtest)
+```
+
+# Carga de datos
+
+Utilizaremos el dataset **Palmer Penguins**, disponible en Kaggle.
+```{r}
+penguins <- read.csv("data/penguins.csv")
+head(penguins)
+```
+
+# Análisis Exploratorio
+
+## Resumen estadístico
+```{r}
+summary(penguins)
+```
+
+## Distribución de la masa corporal
+```{r}
+ggplot(penguins, aes(x = body_mass_g)) +
+  geom_histogram(bins = 30, fill = "steelblue", color = "black") +
+  labs(title = "Distribución de la Masa Corporal de los Pingüinos", x = "Masa Corporal (g)", y = "Frecuencia")
+```
+
+# Modelo de Regresión Lineal Múltiple
+
+Definimos un modelo donde la **masa corporal** es la variable dependiente y las variables explicativas son las características biológicas y geográficas.
+```{r}
+modelo <- lm(body_mass_g ~ bill_length_mm + bill_depth_mm + flipper_length_mm + sex + island, data = penguins)
+summary(modelo)
+```
+
+# Diagnóstico del Modelo
+
+## Prueba de Multicolinealidad (VIF)
+```{r}
+vif(modelo)
+```
+
+## Prueba de Homocedasticidad (Breusch-Pagan)
+```{r}
+bptest(modelo)
+```
+
+# Conclusiones
+
+Los resultados muestran que la masa corporal de los pingüinos está altamente correlacionada con la **longitud del culmen**, la **longitud de la aleta** y el **sexo**. La ubicación geográfica no es un factor determinante en la predicción del peso.
+
+---
+
+## Contacto
+📩 Para dudas o sugerencias, puedes contactarme en **[LinkedIn](https://www.linkedin.com/in/sebastianzunigaalfaro/)**.
