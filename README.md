@@ -43,6 +43,7 @@ Paquetes: ggplot2, dplyr, car, lmtest
 git clone [ENLACE DEL REPO]
 
 2️⃣ Abrir RStudio y ejecutar el script en scripts/
+
 3️⃣ Para un análisis más detallado, abrir notebooks/analisis.Rmd y ejecutar paso a paso.
 
 ## 🤝 Contribuciones
