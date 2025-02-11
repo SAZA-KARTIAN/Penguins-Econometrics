@@ -14,13 +14,11 @@ Este proyecto surge de mi interés en el análisis de datos y mi participación 
 
 ## 📂 Estructura del Proyecto
 
-📁 data/ - Dataset de pingüinos (Palmer Penguins Kaggle dataset)
+- Datos_penguins.xlsx/ - Dataset de pingüinos (Palmer Penguins Kaggle dataset)
 
-📁 scripts/ - Código en R para análisis y modelado
+- Calculos proyecto penguins/ - Código en R para análisis y modelado
 
-📁 notebooks/ - RMarkdown con documentación detallada
-
-📁 report/ - Informe final con resultados y conclusiones
+- TE  RF 31_05 V.FINAL/ - Informe final con resultados y conclusiones
 
 ## 🛠️ Tecnologías utilizadas
 
